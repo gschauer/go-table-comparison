@@ -1,0 +1,10 @@
+### VisualStudioCode
+/.vscode/
+
+### JetBrains
+/.idea/
+
+### misc
+/bin/
+/dist/
+/tmp/
