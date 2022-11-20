@@ -23,32 +23,32 @@ Please note that the absence of a feature does not mean that there is no support
 
 For example, many libraries don't have color support built-in but are compatible with common ANSI color libraries.
 
-| Feature            |     [tabwriter]      |      [alexeyco]      |        [bndr]        |   [cheynewallace]    |       [gosuri]       |     [jedib0t]      |     [olekukonko]     |      [palantir]      |      [rodaine]       |      [syohex]      |     [tatsushid]     |
-| :----------------- | :------------------: | :------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-----------------: |
-| Github last commit |                      |    ![c_alexeyco]     |      ![c_bndr]       |  ![c_cheynewallace]  |     ![c_gosuri]      |    ![c_jedib0t]    |   ![c_olekukonko]    |    ![c_palantir]     |     ![c_rodaine]     |    ![c_syohex]     |   ![c_tatsushid]    |
-| Github popularity  |  language built-in   |    ![s_alexeyco]     |      ![s_bndr]       |  ![s_cheynewallace]  |     ![s_gosuri]      |    ![s_jedib0t]    |   ![s_olekukonko]    |    ![s_palantir]     |     ![s_rodaine]     |    ![s_syohex]     |   ![s_tatsushid]    |
-|                    |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
-| performance        |  :heavy_check_mark:  | :small_blue_diamond: |  :heavy_check_mark:  |  :heavy_check_mark:  |         :x:          | :heavy_check_mark: | :small_blue_diamond: |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark:  |
-|                    |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
-| built-in colors    |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         |         :x:         |
-| predefined styles  |         :x:          |  :heavy_check_mark:  |  :heavy_check_mark:  |         :x:          |         :x:          | :heavy_check_mark: |         :x:          |         :x:          |         :x:          |        :x:         |         :x:         |
-| custom styles      |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         | :heavy_check_mark:  |
-|                    |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
-| align text         | :small_blue_diamond: |  :heavy_check_mark:  | :small_blue_diamond: | :small_blue_diamond: | :small_blue_diamond: | :heavy_check_mark: |  :heavy_check_mark:  | :small_blue_diamond: |         :x:          |        :x:         | :heavy_check_mark:  |
-| borders            | :small_blue_diamond: |  :heavy_check_mark:  |  :heavy_check_mark:  | :small_blue_diamond: |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  | :small_blue_diamond: |         :x:          |        :x:         |         :x:         |
-| cell span          |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         |         :x:         |
-| custom renderer    |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          | :small_blue_diamond: |        :x:         |         :x:         |
-| footer             |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         |         :x:         |
-| multiline          |         :x:          |  :heavy_check_mark:  |  :heavy_check_mark:  |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         |         :x:         |
-|                    |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
-| string values      |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark:  |
-| interface values   |  :heavy_check_mark:  |         :x:          |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: |         :x:          |  :heavy_check_mark:  |  :heavy_check_mark:  |        :x:         | :heavy_check_mark:  |
-| arbitrary structs  |         :x:          |         :x:          |         :x:          |         :x:          |         :x:          |        :x:         |         :x:          |  :heavy_check_mark:  |         :x:          |        :x:         |         :x:         |
-|                    |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
-| ASCII output       |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark:  |
-| CSV output         |         :x:          |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |         :x:          |         :x:          |         :x:          |        :x:         |         :x:         |
-| HTML output        |         :x:          |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |         :x:          |         :x:          |         :x:          |        :x:         |         :x:         |
-| Markdown output    |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |         :x:          |         :x:          |         :x:          |        :x:         |         :x:         |
+| Feature            |     [tabwriter]      |      [alexeyco]      |        [bndr]        |      [caarlos0]      |   [cheynewallace]    |       [gosuri]       |     [jedib0t]      |     [olekukonko]     |      [palantir]      |      [rodaine]       |      [syohex]      |     [tatsushid]     |
+| :----------------- | :------------------: | :------------------: | :------------------: | :------------------: | :------------------: | :------------------: | :----------------: | :------------------: | :------------------: | :------------------: | :----------------: | :-----------------: |
+| Github last commit |                      |    ![c_alexeyco]     |      ![c_bndr]       |    ![c_caarlos0]     |  ![c_cheynewallace]  |     ![c_gosuri]      |    ![c_jedib0t]    |   ![c_olekukonko]    |    ![c_palantir]     |     ![c_rodaine]     |    ![c_syohex]     |   ![c_tatsushid]    |
+| Github popularity  |  language built-in   |    ![s_alexeyco]     |      ![s_bndr]       |    ![s_caarlos0]     |  ![s_cheynewallace]  |     ![s_gosuri]      |    ![s_jedib0t]    |   ![s_olekukonko]    |    ![s_palantir]     |     ![s_rodaine]     |    ![s_syohex]     |   ![s_tatsushid]    |
+|                    |                      |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
+| performance        |  :heavy_check_mark:  | :small_blue_diamond: |  :heavy_check_mark:  | :small_blue_diamond: |  :heavy_check_mark:  |         :x:          | :heavy_check_mark: | :small_blue_diamond: |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark:  |
+|                    |                      |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
+| built-in colors    |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         |         :x:         |
+| predefined styles  |         :x:          |  :heavy_check_mark:  |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |         :x:          |         :x:          |         :x:          |        :x:         |         :x:         |
+| custom styles      |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         | :heavy_check_mark:  |
+|                    |                      |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
+| align text         | :small_blue_diamond: |  :heavy_check_mark:  | :small_blue_diamond: | :small_blue_diamond: | :small_blue_diamond: | :small_blue_diamond: | :heavy_check_mark: |  :heavy_check_mark:  | :small_blue_diamond: |         :x:          |        :x:         | :heavy_check_mark:  |
+| borders            | :small_blue_diamond: |  :heavy_check_mark:  |  :heavy_check_mark:  | :small_blue_diamond: | :small_blue_diamond: |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  | :small_blue_diamond: |         :x:          |        :x:         |         :x:         |
+| cell span          |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         |         :x:         |
+| custom renderer    |         :x:          |  :heavy_check_mark:  |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          | :small_blue_diamond: |        :x:         |         :x:         |
+| footer             |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         |         :x:         |
+| multiline          |         :x:          |  :heavy_check_mark:  |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         |         :x:         |
+|                    |                      |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
+| string values      |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark:  |
+| interface values   |  :heavy_check_mark:  |         :x:          |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: |         :x:          |  :heavy_check_mark:  |  :heavy_check_mark:  |        :x:         | :heavy_check_mark:  |
+| arbitrary structs  |         :x:          |         :x:          |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |        :x:         |         :x:          |  :heavy_check_mark:  |         :x:          |        :x:         |         :x:         |
+|                    |                      |                      |                      |                      |                      |                      |                    |                      |                      |                      |                    |                     |
+| ASCII output       |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: |  :heavy_check_mark:  |  :heavy_check_mark:  |  :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark:  |
+| CSV output         |         :x:          |         :x:          |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |         :x:          |         :x:          |         :x:          |        :x:         |         :x:         |
+| HTML output        |         :x:          |         :x:          |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |         :x:          |         :x:          |         :x:          |        :x:         |         :x:         |
+| Markdown output    |         :x:          |  :heavy_check_mark:  |         :x:          |         :x:          |         :x:          |         :x:          | :heavy_check_mark: |         :x:          |         :x:          |         :x:          |        :x:         |         :x:         |
 
 ## Benchmark
 
@@ -73,6 +73,7 @@ pkg: github.com/gschauer/go-table-comparison/simple
 BenchmarkTabWriter-8               10000             14941 ns/op            8098 B/op         40 allocs/op
 BenchmarkAlexeyCo-8                10000            188199 ns/op           39531 B/op       1087 allocs/op
 BenchmarkBndr-8                    10000             55644 ns/op           38108 B/op        546 allocs/op
+BenchmarkCaarlos0-8                10000              6749 ns/op            8708 B/op         86 allocs/op
 BenchmarkCheyneWallace-8           10000             16833 ns/op            9139 B/op         74 allocs/op
 BenchmarkGOsuri-8                  10000            371959 ns/op           45158 B/op       2405 allocs/op
 BenchmarkJedib0t-8                 10000            102503 ns/op           11940 B/op        312 allocs/op
@@ -130,6 +131,15 @@ go run main.go
 +-------+---------------------+-----------------+--------------------------------+---------+
 |     3 |     John R. Jackson |    810-325-1417 |       JohnRJackson@armyspy.com |      15 |
 +-------+---------------------+-----------------+--------------------------------+---------+
+```
+
+### github.com/caarlos0/tablewriter
+
+```text
+#        NAME                PHONE           EMAIL                          QTTY
+1        Newton G. Goetz     252-585-5166    NewtonGGoetz@dayrep.com        10
+2        Rebecca R. Edney    865-475-4171    RebeccaREdney@armyspy.com      12
+3        John R. Jackson     810-325-1417    JohnRJackson@armyspy.com       15
 ```
 
 ### github.com/cheynewallace/tabby

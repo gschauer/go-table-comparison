@@ -28,6 +28,7 @@ func main() {
 	}{
 		{"github.com/alexeyco/simpletable", simple.AlexeyCo},
 		{"github.com/bndr/gotabulate", simple.Bndr},
+		{"github.com/caarlos0/tablewriter", simple.Caarlos0},
 		{"github.com/cheynewallace/tabby", simple.CheyneWallace},
 		{"github.com/gosuri/uitable", simple.GOsuri},
 		{"github.com/jedib0t/go-pretty", simple.Jedib0t},
