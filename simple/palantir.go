@@ -37,25 +37,15 @@ func Palantir() string {
 	tw := tabwriter.NewWriter(b, 0, 0, 2, ' ', 0)
 
 	cg := make(map[string]tableprinter.ColumnGetter)
-	cg["#"] = func(row interface{}) string {
-		return strconv.Itoa(row.(addr).id)
-	}
-	cg["NAME"] = func(row interface{}) string {
-		return row.(addr).name
-	}
-	cg["PHONE"] = func(row interface{}) string {
-		return row.(addr).phone
-	}
-	cg["EMAIL"] = func(row interface{}) string {
-		return row.(addr).email
-	}
-	cg["QTTY"] = func(row interface{}) string {
-		return strconv.Itoa(row.(addr).qtty)
-	}
+	cg["#"] = func(row any) string { return strconv.Itoa(row.(addr).id) }
+	cg["NAME"] = func(row any) string { return row.(addr).name }
+	cg["PHONE"] = func(row any) string { return row.(addr).phone }
+	cg["EMAIL"] = func(row any) string { return row.(addr).email }
+	cg["QTTY"] = func(row any) string { return strconv.Itoa(row.(addr).qtty) }
 
-	var rows []interface{}
-	for _, r := range data {
-		rows = append(rows, addr{r[0].(int), r[1].(string), r[2].(string), r[3].(string), r[4].(int)})
+	rows := make([]any, len(data))
+	for i, r := range data {
+		rows[i] = addr{r[0].(int), r[1].(string), r[2].(string), r[3].(string), r[4].(int)}
 	}
 
 	t := tableprinter.New(tw, cg, false, true, true)

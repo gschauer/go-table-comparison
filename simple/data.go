@@ -14,7 +14,7 @@
 
 package simple
 
-var data = [][]interface{}{
+var data = [][]any{
 	{1, "Newton G. Goetz", "252-585-5166", "NewtonGGoetz@dayrep.com", 10},
 	{2, "Rebecca R. Edney", "865-475-4171", "RebeccaREdney@armyspy.com", 12},
 	{3, "John R. Jackson", "810-325-1417", "JohnRJackson@armyspy.com", 15},

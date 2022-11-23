@@ -24,7 +24,7 @@ import (
 func Caarlos0() string {
 	b := &strings.Builder{}
 	err := tablewriter.Render(b, data, []string{"#", "NAME", "PHONE", "EMAIL", "QTTY"},
-		func(row []interface{}) ([]string, error) {
+		func(row []any) ([]string, error) {
 			return []string{
 				strconv.Itoa(row[0].(int)),
 				row[1].(string),

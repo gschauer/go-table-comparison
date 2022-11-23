@@ -66,24 +66,25 @@ go test ./... -bench . -benchmem -benchtime 10000x
 ```
 
 ```text
+go test ./... -bench . -benchmem -benchtime 10000x
 ?       github.com/gschauer/go-table-comparison [no test files]
-goos: linux
-goarch: amd64
+goos: darwin
+goarch: arm64
 pkg: github.com/gschauer/go-table-comparison/simple
-BenchmarkTabWriter-8               10000             14941 ns/op            8098 B/op         40 allocs/op
-BenchmarkAlexeyCo-8                10000            188199 ns/op           39531 B/op       1087 allocs/op
-BenchmarkBndr-8                    10000             55644 ns/op           38108 B/op        546 allocs/op
-BenchmarkCaarlos0-8                10000              6749 ns/op            8708 B/op         86 allocs/op
-BenchmarkCheyneWallace-8           10000             16833 ns/op            9139 B/op         74 allocs/op
-BenchmarkGOsuri-8                  10000            371959 ns/op           45158 B/op       2405 allocs/op
-BenchmarkJedib0t-8                 10000            102503 ns/op           11940 B/op        312 allocs/op
-BenchmarkOlekuKonko-8              10000            140324 ns/op           22250 B/op        821 allocs/op
-BenchmarkPalantir-8                10000             18854 ns/op           11075 B/op         93 allocs/op
-BenchmarkRodaine-8                 10000             24369 ns/op            8275 B/op        244 allocs/op
-BenchmarkSyohex-8                  10000             98307 ns/op           24851 B/op        669 allocs/op
-BenchmarkTatsushiD-8               10000             54670 ns/op           11808 B/op        151 allocs/op
+BenchmarkAlexeyCo-10               10000            125782 ns/op           63461 B/op       1418 allocs/op
+BenchmarkBndr-10                   10000             23313 ns/op           36994 B/op        536 allocs/op
+BenchmarkCaarlos0-10               10000              6747 ns/op            8708 B/op         86 allocs/op
+BenchmarkCheyneWallace-10          10000              7392 ns/op            8708 B/op         72 allocs/op
+BenchmarkGOsuri-10                 10000            276073 ns/op          117436 B/op       3532 allocs/op
+BenchmarkJedib0t-10                10000             36386 ns/op           11005 B/op        310 allocs/op
+BenchmarkOlekuKonko-10             10000            102845 ns/op           46892 B/op       1196 allocs/op
+BenchmarkPalantir-10               10000              8057 ns/op           10677 B/op         93 allocs/op
+BenchmarkRodaine-10                10000             10062 ns/op            8820 B/op        245 allocs/op
+BenchmarkSyohex-10                 10000             82481 ns/op           47804 B/op        999 allocs/op
+BenchmarkTabWriter-10              10000              5971 ns/op            7715 B/op         40 allocs/op
+BenchmarkTatsushiD-10              10000             66908 ns/op           34240 B/op        481 allocs/op
 PASS
-ok      github.com/gschauer/go-table-comparison/simple   11.064s
+ok      github.com/gschauer/go-table-comparison/simple  7.990s
 ```
 
 ## Example Output
@@ -232,6 +233,7 @@ In case something is missing or incorrect, please file an issue or raise a pull 
 [tabwriter]: https://golang.org/pkg/text/tabwriter
 [alexeyco]: https://github.com/alexeyco/simpletable
 [bndr]: https://github.com/bndr/gotabulate
+[caarlos0]: https://github.com/caarlos0/tablewriter
 [cheynewallace]: https://github.com/cheynewallace/tabby
 [gosuri]: https://github.com/gosuri/uitable
 [jedib0t]: https://github.com/jedib0t/go-pretty/tree/master/table
@@ -243,6 +245,7 @@ In case something is missing or incorrect, please file an issue or raise a pull 
 
 [s_alexeyco]: https://img.shields.io/github/stars/alexeyco/simpletable?style=plastic&cacheSeconds=3600
 [s_bndr]: https://img.shields.io/github/stars/bndr/gotabulate?style=plastic&cacheSeconds=3600
+[s_caarlos0]: https://img.shields.io/github/stars/caarlos0/tablewriter?style=plastic&cacheSeconds=3600
 [s_cheynewallace]: https://img.shields.io/github/stars/cheynewallace/tabby?style=plastic&cacheSeconds=3600
 [s_gosuri]: https://img.shields.io/github/stars/gosuri/uitable?style=plastic&cacheSeconds=3600
 [s_jedib0t]: https://img.shields.io/github/stars/jedib0t/go-pretty?style=plastic&cacheSeconds=3600
@@ -254,6 +257,7 @@ In case something is missing or incorrect, please file an issue or raise a pull 
 
 [c_alexeyco]: https://img.shields.io/github/last-commit/alexeyco/simpletable?style=plastic&cacheSeconds=3600
 [c_bndr]: https://img.shields.io/github/last-commit/bndr/gotabulate?style=plastic&cacheSeconds=3600
+[c_caarlos0]: https://img.shields.io/github/last-commit/caarlos0/tablewriter?style=plastic&cacheSeconds=3600
 [c_cheynewallace]: https://img.shields.io/github/last-commit/cheynewallace/tabby?style=plastic&cacheSeconds=3600
 [c_gosuri]: https://img.shields.io/github/last-commit/gosuri/uitable?style=plastic&cacheSeconds=3600
 [c_jedib0t]: https://img.shields.io/github/last-commit/jedib0t/go-pretty?style=plastic&cacheSeconds=3600
