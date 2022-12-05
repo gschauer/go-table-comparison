@@ -11,7 +11,7 @@ require (
 	github.com/jedib0t/go-pretty v4.3.0+incompatible
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/palantir/pkg/tableprinter v1.1.0
-	github.com/rodaine/table v1.0.1
+	github.com/rodaine/table v1.1.0
 	github.com/syohex/go-texttable v0.0.0-20200919024338-eae5d131ba28
 	github.com/tatsushid/go-prettytable v0.0.0-20141013043238-ed2d14c29939
 )
